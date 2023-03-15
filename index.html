@@ -2,25 +2,55 @@
 <html>
   <head>
     <title>Walk through your first HTML page | blog.codingninjas.in</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <!-- Header -->
-    <img src="./images/cnlogo.png" alt="CN Logo">
+    <header id="main-header">
+      <a href="http://blog.codingninjas.in/" id="logo"><img src="./images/cnlogo.png" alt="CN Logo"></a>
 
-    <div>
-      <a href="https://www.codingninjas.com/blog/" target="_blank">blog.codingninjas.in</a>
-    </div>
-
-    <p>Coding Ninjas Official Blog</p>
-
-    <img src="./images/cnilovecoding.png" alt="CN LOVE CODING">
+      <div>
+        <p id="site-title"><a href="http://blog.codingninjas.in/">blog.codingninjas.in</a></p>
+        <p id="about-site" class="grey"> Coding Ninjas Official Blog</p>
+      </div>
+  
+      <div id="header-image-container">
+        <img src="./images/cnilovecoding.png" alt="CN LOVE CODING">
+      </div>
+    </header>
 
     <!-- Main -->
 
-    <div>
-      <h1> A step-by-step walk through of your first HTML page </h1>
+    <div id="content">
+      
+    <main>
+      
+      <header id="blog-header">
+          <h1 id="blog-title" class="h-style"> A step-by-step walk through of your first HTML page </h1>
+      </header>
 
-      <img src="./images/cnhtmlbanner.png" alt="HTML Photo">
+      <section id="author-section">
+
+        <div>
+            <img id="author-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000011_1549316247_author-pic.png" alt="author">
+        </div>
+
+        <div>
+            <p class="grey">Nitesh Gupta</p>
+            <p class="grey">Web Development</p>
+        </div>
+      </section>
+
+    <article id="blog-content">
+
+        <div id="blog-image-container">
+          <div id="views">
+            <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000012_1549316267_signal.png" alt="views">
+            <span><b>Views:</b></span>
+            <span><b>1,137</b></span>
+          </div>
+          <img src="./images/cnhtmlbanner.png" alt="HTML Photo">
+        </div>
 
       <p>
         HTML is short for HyperText Markup Language.Basically, it’s the “code” behind every webpage – even this one. If you’re just beginning to learn HTML, let us tell you that it’s a fairly easy task. HTML, without styling, can’t do anything more than setting a layout, drawing a table, or creating frames – but it is handy as it helps you structure the content correctly, which is important when you sit down to add style to your HTML.
@@ -35,12 +65,11 @@
       <p>
         Through this article, we aim to give you the essential HTML building blocks that’ll help you get up and running. Reading this, you’ll be able to understand an HTML source code and even modify it for your own good!
       </p>
-    </div>
 
     <div>
        <h3>Step One - TAGS</h3>
 
-       <img src="./images/tag.png" width="700px" alt="Tag">
+       <img src="./images/tag.png" alt="Tag">
 
        <p>
         Tags are what you’ll see the most when you look at any HTML source code. A tag can ideally be seen as a wrapper to any item on your HTML document. Tags tell what magic is to be done on the content enclosed by them.
@@ -129,7 +158,7 @@
 
       <p>Should produce something like this on your browser: Don’t fret too much about the <br/>. It’s just for breaking the line so that you can start from the next line. Enter key does little when it comes to changing lines in your HTML document.</p>
 
-      <img src="./images/browser.png" alt="browser output" width="900px">
+      <img src="./images/browser.png" alt="browser output">
 
       <h4>Tags to help you structure your content:</h4>
 
@@ -246,8 +275,6 @@
       <p>
         All of these tags, when arranged coherently, will provide you with a simple webpage consisting of images, headings, and lists. Further, there are various tags that HTML supports, and we thoroughly recommend you to check them out and play with them!
       </p>
-      
-    </div>
 
     <div>
       <h2>In Conclusion</h2>
@@ -259,6 +286,90 @@
       <p>
         Let us know if you had any problems in the article, and don’t forget to have a look at a source code or two!
       </p>
-    </div>  
-  </body>
+    </div>
+  </article>  
+  </main>
+
+  <aside>
+    <section id="subscription" class="widget">
+        <h4 class="widget-title">Subscribe now to stay updated with new technology trends</h4>
+
+        <div id="subscribe-form">
+            <form action="">
+                <label for="input-name">Name</label>
+                <input id="input-name" name="name" type="text">
+                <label for="input-email">Email *</label>
+                <input id="input-email" name="input-email" type="text" required>
+                <button class="sub-btn" type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="search" class="widget">
+        <input type="text" name="search" placeholder="Search...">
+        <img src="./images/search-icon.png" alt="search icon">
+    </section>
+
+    <section id="recent-posts" class="widget">
+        <h4 class="widget-title">RECENT POSTS</h4>
+
+        <div>
+            <ul>
+                <li><a href="">Guiding path for a fresher to start their carrer in software programming/development</a></li>
+                <li><a href="">The undisputed truth about emotional support animal rhode island that the experts donot want you to hear</a></li>
+                <li><a href="">The Best Plan to use for Emotional Support Animal Oregon</a></li>
+                <li><a href="">How to find Emotional Support Animal Illiios Online</a></li>
+                <li><a href="">Carrer opportunities after mastering python</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="recent-comments" class="widget">
+        <h4 class="widget-title">RECENT COMMENTS</h4>
+
+        <div>
+            <ul>
+                <li><a href=""><span class="uppercase">a v yogesh rao </span> <span class="black">on</span> Get ready for the ultimate scholarship test!</a></li>
+                <li><a href=""><span class="uppercase">strongy internetowe </span><span class="black">on</span> Recursion &#40;The good, the bad and  the not so ugly&#41;</a></li>
+                <li><a href=""><span class="uppercase">philib herb </span><span class="black">on</span> Recursion &#40;The good, the bad and  the not so ugly&#41;</a></li>
+                <li><a href=""><span class="uppercase">pascher vigra </span><span class="black">on</span> Recursion &#40;The good, the bad and  the not so ugly&#41;</a></li>
+                <li><a href=""><span class="uppercase">ananya burman </span><span class="black">on</span> Code your way through Competitive programming!</a></li>
+            </ul>
+        </div>
+
+    </section>
+
+    <section id="categories" class="widget">
+        <h4 class="widget-title">Categories</h4>
+
+        <div>
+            <ul>
+                <li><a href="">Android</a></li>
+                <li><a href="">General</a></li>
+                <li><a href="">Interview Experiences</a></li>
+                <li><a href="">Machine Learning</a></li>
+                <li><a href="">Ruby</a></li>
+                <li><a href="">Uncategorized</a></li>
+                <li><a href="">Web Development</a></li>
+            </ul>
+        </div>
+    </section>
+  </aside>
+
+  <div id="social">
+    <a id="facebook" class="social-btn" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F03%2F13%2Fa-step-by-step-walk-through-of-your-first-html-page%2F"><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png" alt="fb"></a>
+
+    <a id="linkedin" class="social-btn" target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&title=Best+Coding+Practices+for+Hassle-free+Programming&url=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png" alt="in"></a>
+
+    <a id="twitter" class="social-btn" target="_blank" href="https://twitter.com/share?url=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F&text=Best+Coding+Practices+for+Hassle-free+Programming"><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000016_1549330452_twitter-logo.png" alt="twi"></a>
+
+    <a id="gmail" class="social-btn" target="_blank" href="https://plus.google.com/share?url=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000017_1549330467_google-logo.png" alt="g+"></a>
+
+    <a id="whatsapp" class="social-btn" target="_blank" href="whatsapp://send?text=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000018_1549330485_whatsapp-logo.png" alt="w-app"></a>
+
+    <a id="mail" class="social-btn" target="_blank" href="mailto:adresse@example.com?subject=7%20best%20coding%20practices%20to%20follow%20%7C%20blog.codingninjas.in&body=http%3A%2F%2Fblog.codingninjas.in%2F2018%2F04%2F02%2Fbest-coding-practices-for-hassle-free-programming%2F"><img class="social-img" src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000019_1549330510_mail-logo.png" alt="mail"></a>
+  </div>
+ </div>
+</body>
 </html>
